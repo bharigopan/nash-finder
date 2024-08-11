@@ -8,27 +8,14 @@ game.player_join(grm.Player(2))
 game.player_init_mixed_strategies()
 
 """
-Matching Pennies game
+Prosoner's dilemma
 Bimatrix:
-    [1, -1],
-    [-1, 1]
+    [-10, -1],
+    [-25, -3]
 
-    [-1, 1],
-    [1, -1],
-the unique NE at (0.5, 0.5)
-"""
-
-"""
-# player 1
-game.player_assign_payoff(1, "11", 1)
-game.player_assign_payoff(1, "12", -1)
-game.player_assign_payoff(1, "21", -1)
-game.player_assign_payoff(1, "22", 1)
-# player 2
-game.player_assign_payoff(2, "11", -1)
-game.player_assign_payoff(2, "12", 1)
-game.player_assign_payoff(2, "21", 1)
-game.player_assign_payoff(2, "22", -1)
+    [-10, -25],
+    [-1, -3],
+the unique NE at (-10, -10)
 """
 
 # player 1

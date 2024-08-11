@@ -11,24 +11,24 @@ game.player_init_mixed_strategies()
 Battle of sexes
 
 Bimatrix:
-    [900, 0],
-    [0, 500]
+    [7, 0],
+    [0, 3]
 
-    [500, 0],
-    [0, 900],
+    [3, 0],
+    [0, 7],
 """
 
 # player 1
-game.player_assign_payoff(1, "11", 900)
+game.player_assign_payoff(1, "11", 7)
 game.player_assign_payoff(1, "12", 0)
 game.player_assign_payoff(1, "21", 0)
-game.player_assign_payoff(1, "22", 500)
+game.player_assign_payoff(1, "22", 3)
 
 # player 2
-game.player_assign_payoff(2, "11", 500)
+game.player_assign_payoff(2, "11", 3)
 game.player_assign_payoff(2, "12", 0)
 game.player_assign_payoff(2, "21", 0)
-game.player_assign_payoff(2, "22", 900)
+game.player_assign_payoff(2, "22", 7)
 
 # run the iterations to approximate Nash equilibrium
 game.run()

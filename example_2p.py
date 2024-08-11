@@ -41,7 +41,7 @@ game.player_assign_payoff(2, "33", 767)
 
 # run the iterations to approximate Nash equilibrium
 #game.run(iterations=10**4 * 6)
-game.run(iterations=10)
+game.run(iterations=1000)
 
 # visulize the game evolution for `grm.Player(3)`
 game.plot_3()
